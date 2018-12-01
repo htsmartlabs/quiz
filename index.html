@@ -23,28 +23,40 @@
   </head>
 
   <body>
-    <div class="container">
+
+    <div id="start" class="container start">
       <div class="card card-login mx-auto mt-5">
-        <div class="card-header">Login</div>
-        <div class="card-body bg-dark">
-          <form>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="required" autofocus="autofocus">
-                <label for="inputEmail">Email address</label>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="form-label-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="required">
-                <label for="inputPassword">Password</label>
-              </div>
-            </div>
-            <a class="btn btn-primary btn-block" href="index.html">Login</a>
-          </form>
+        <img class="card-img-top" src = "images/quiz.jpg">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary btn-block" onclick="startQuiz(1)">Start Now!</a>
         </div>
       </div>
     </div>
+    
+    <div id="game" class="container game">
+      <div class="card card-login mx-auto mt-5">
+        <div class="card-body">
+          <h1 id="question">Question</h1>
+          <p id="ans1">ans1</p>
+          <p id="ans2">ans2</p>
+          <p id="ans3">ans3</p>
+          <p id="ans4">ans4</p>
+          <button type="button" class="btn btn-primary btn-block" onclick="startQuiz(2)">Check winner</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="winner" class="container winner">
+      <div class="card card-login mx-auto mt-5">
+        <img class="card-img-top" src = "images/quiz.jpg">
+        <div class="card-body">
+          <button type="button" class="btn btn-primary btn-block" onclick="startQuiz(3)">Play again! </a>
+        </div>
+      </div>
+    </div>
+
+    <!---My quiz javascript files-->
+    <script src="js/quiz.js"></script>
 
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>

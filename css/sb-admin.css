@@ -16,6 +16,15 @@ body {
   background-size: auto;
 }
 
+.game{
+  display: none;
+}
+
+.winner{
+  display: none;
+}
+
+
 #wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
